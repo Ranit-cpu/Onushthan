@@ -173,23 +173,7 @@ export default function Navbar() {
         </div>
 
         {/* Enhanced Bell Icon with Notification Badge */}
-        <button className="relative w-11 h-11 rounded-full bg-gradient-to-br from-cyan-500/20 to-purple-600/20 border border-cyan-500/30 hover:border-cyan-400/70 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/40 flex items-center justify-center group overflow-hidden hover:scale-110">
-          {/* Background gradient animation */}
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/0 to-purple-600/0 group-hover:from-cyan-400/30 group-hover:to-purple-600/30 transition-all duration-300" />
-          
-          {/* Icon */}
-          <Bell className="w-4 h-4 text-cyan-400/80 group-hover:text-cyan-300 relative z-10 group-hover:animate-pulse" />
-          
-          {/* Notification badge */}
-          {notificationCount > 0 && (
-            <div className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-br from-pink-500 to-red-600 rounded-full border-2 border-slate-900 flex items-center justify-center animate-pulse">
-              <span className="text-[10px] font-bold text-white">{notificationCount}</span>
-            </div>
-          )}
-          
-          {/* Ripple effect */}
-          <div className="absolute inset-0 rounded-full bg-cyan-400/20 scale-0 group-hover:scale-150 opacity-0 group-hover:opacity-100 transition-all duration-500" />
-        </button>
+        
 
         {/* Enhanced User Icon */}
         <button className="relative w-11 h-11 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-600/20 border border-purple-500/30 hover:border-purple-400/70 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/40 flex items-center justify-center group overflow-hidden hover:scale-110">
