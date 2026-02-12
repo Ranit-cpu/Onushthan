@@ -195,12 +195,12 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center mt-20">
-              <button className="group relative px-10 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 font-bold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/60 hover:scale-110">
+              {/* <button className="group relative px-10 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 font-bold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/60 hover:scale-110">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
                 <span className="relative z-15">Explore All Features</span>
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-pink-500 opacity-0 group-hover:opacity-50 blur-xl transition-all duration-500 rounded-full" />
-              </button>
+              </button> */}
             </div>
           </section>
         </ScrollReveal>
