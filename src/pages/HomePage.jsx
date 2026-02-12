@@ -13,36 +13,151 @@ const EVENT_CATEGORIES = [
     title: "Technicals",
     gradient: "from-purple-500 to-pink-600",
     events: [
-      { name: "CodeBlaze", desc: "24-hour national level hackathon", img: "./images/1.jpeg" },
-      { name: "HackNova", desc: "Innovation-first coding sprint", img: "./images/2.jpeg" },
-      { name: "HackNova", desc: "Innovation-first coding sprint", img: "./images/3.jpeg" },
-      { name: "HackNova", desc: "Innovation-first coding sprint", img: "https://images.unsplash.com/photo-1531482615713-2afd69097998" },
+      { 
+        name: "CodeBlaze", 
+        desc: "24-hour national level hackathon", 
+        images: [
+          "./images/1.jpeg",
+          "./images/2.jpeg",
+          "./images/3.jpeg",
+          "https://images.unsplash.com/photo-1531482615713-2afd69097998"
+        ]
+      },
+      { 
+        name: "HackNova", 
+        desc: "Innovation-first coding sprint", 
+        images: [
+          "./images/2.jpeg",
+          "./images/3.jpeg",
+          "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+          "https://images.unsplash.com/photo-1531482615713-2afd69097998"
+        ]
+      },
+      { 
+        name: "TechSprint", 
+        desc: "Innovation-first coding sprint", 
+        images: [
+          "./images/3.jpeg",
+          "https://images.unsplash.com/photo-1531482615713-2afd69097998",
+          "./images/1.jpeg",
+          "./images/2.jpeg"
+        ]
+      },
+      { 
+        name: "DevFest", 
+        desc: "Innovation-first coding sprint", 
+        images: [
+          "https://images.unsplash.com/photo-1531482615713-2afd69097998",
+          "./images/1.jpeg",
+          "./images/2.jpeg",
+          "./images/3.jpeg"
+        ]
+      },
     ],
   },
   {
     title: "Expos",
     gradient: "from-orange-500 to-pink-500",
     events: [
-      { name: "IoT Expo", desc: "Smart devices & hardware showcase", img: "https://images.unsplash.com/photo-1518770660439-4636190af475" },
-      { name: "Startup Expo", desc: "Early-stage innovation demos", img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7" },
-      { name: "Startup Expo", desc: "Early-stage innovation demos", img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7" },
-      { name: "Startup Expo", desc: "Early-stage innovation demos", img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7" },
+      { 
+        name: "IoT Expo", 
+        desc: "Smart devices & hardware showcase", 
+        images: [
+          "https://images.unsplash.com/photo-1518770660439-4636190af475",
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+          "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
+          "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+        ]
+      },
+      { 
+        name: "Startup Expo", 
+        desc: "Early-stage innovation demos", 
+        images: [
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+          "https://images.unsplash.com/photo-1559136555-9303baea8ebd",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475",
+          "https://images.unsplash.com/photo-1540575467063-178a50c2df87"
+        ]
+      },
+      { 
+        name: "Tech Showcase", 
+        desc: "Early-stage innovation demos", 
+        images: [
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475",
+          "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+          "https://images.unsplash.com/photo-1559136555-9303baea8ebd"
+        ]
+      },
+      { 
+        name: "Innovation Fair", 
+        desc: "Early-stage innovation demos", 
+        images: [
+          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+          "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
+          "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475"
+        ]
+      },
     ],
   },
   {
     title: "Culturals",
     gradient: "from-emerald-500 to-teal-500",
     events: [
-      { name: "Future of AI", desc: "Industry expert panel", img: "/images/2.png" },
-      { name: "Cybersecurity", desc: "Modern threat landscape", img: "/images/4.png" },
-      { name: "Future of AI", desc: "Industry expert panel", img: "https://images.unsplash.com/photo-1531297484001-80022131f5a1" },
-      { name: "Future of AI", desc: "Industry expert panel", img: "https://images.unsplash.com/photo-1531297484001-80022131f5a1" },
+      { 
+        name: "Future of AI", 
+        desc: "Industry expert panel", 
+        images: [
+          "/images/2.png",
+          "/images/4.png",
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+          "https://images.unsplash.com/photo-1540575467063-178a50c2df87"
+        ]
+      },
+      { 
+        name: "Cybersecurity", 
+        desc: "Modern threat landscape", 
+        images: [
+          "/images/4.png",
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+          "/images/2.png",
+          "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+        ]
+      },
+      { 
+        name: "Tech Talks", 
+        desc: "Industry expert panel", 
+        images: [
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+          "/images/2.png",
+          "/images/4.png",
+          "https://images.unsplash.com/photo-1540575467063-178a50c2df87"
+        ]
+      },
+      { 
+        name: "Innovation Summit", 
+        desc: "Industry expert panel", 
+        images: [
+          "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+          "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+          "/images/2.png",
+          "/images/4.png"
+        ]
+      },
     ],
   },
 ];
 
 export default function HomePage() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [lightbox, setLightbox] = useState(null);
+
+  const openLightbox = (images, startIndex = 0) => {
+    setLightbox({
+      images,
+      index: startIndex
+    });
+  };
 
   return (
     <div className="text-white min-h-screen relative overflow-hidden">
@@ -80,7 +195,7 @@ export default function HomePage() {
 
             <h1 className="text-7xl font-black leading-tight mb-6">
               <span className="relative inline-block">
-                <span className="font-['Great_Vibes'] text-9xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <span className="font-['Great_Vibes'] text-9xl bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent pr-4">
                   Onushthan  
                 </span>
               </span>
@@ -139,18 +254,25 @@ export default function HomePage() {
                   <div className="grid grid-cols-4 gap-10">
                     {category.events.map((event, j) => (
                       <ScrollReveal key={j} delay={j * 0.08} variant="fadeUp">
-                        <div className="group relative cursor-pointer">
+                        <div 
+                          className="group relative cursor-pointer"
+                          onClick={() => openLightbox(event.images, 0)}
+                        >
                           <div className={`absolute -inset-3 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-40 blur-2xl transition-all duration-700 rounded-3xl`} />
                           <div className="relative bg-gradient-to-br from-white/10 to-white/0 backdrop-blur-xl border-2 border-white/20 rounded-3xl overflow-hidden transition-all duration-500 group-hover:scale-110 group-hover:border-white/40">
                             <div className="relative h-44 overflow-hidden">
                               <img
-                                src={`${event.img}?auto=format&fit=crop&w=600&q=80`}
+                                src={`${event.images[0]}?auto=format&fit=crop&w=600&q=80`}
                                 alt={event.name}
-                                onClick={() => setSelectedImage(event.img)}
-                                className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-1000 cursor-pointer"
+                                className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-1000"
                               />
                               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
                               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
+                              
+                              {/* Image count badge */}
+                              <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs text-white/90 font-semibold">
+                                {event.images.length} photos
+                              </div>
                             </div>
                             <div className="p-8">
                               <h4 className="text-xl font-black mb-3 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
@@ -171,28 +293,65 @@ export default function HomePage() {
         </ScrollReveal>
       </div>
 
-      {/* ── Lightbox ── */}
-      {selectedImage && (
+      {/* ── Lightbox Collage ── */}
+      {lightbox && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-md flex items-center justify-center z-50 p-10"
-          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 bg-black/95 backdrop-blur-xl flex items-center justify-center z-50 p-10 overflow-y-auto"
+          onClick={() => setLightbox(null)}
         >
           <div
-            className="relative bg-white rounded-3xl p-6 max-w-5xl w-full shadow-2xl"
+            className="relative max-w-7xl w-full my-auto"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Close */}
             <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-lg font-bold hover:scale-110 transition"
-            >✕</button>
-            {selectedImage.endsWith(".mp4") ? (
-              <video src={selectedImage} controls autoPlay className="w-full max-h-[80vh] rounded-2xl" />
-            ) : (
-              <img src={selectedImage} alt="Preview" className="w-full max-h-[80vh] object-contain rounded-2xl" />
-            )}
+              onClick={() => setLightbox(null)}
+              className="absolute -top-8 -right-8 w-14 h-14 rounded-full bg-white text-black text-2xl font-bold hover:scale-110 transition z-20 shadow-2xl flex items-center justify-center"
+            >
+              ✕
+            </button>
+
+            {/* Event Title */}
+            <div className="text-center mb-8">
+              <h3 className="text-4xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                Event Gallery
+              </h3>
+              <p className="text-white/60 text-sm mt-2">{lightbox.images.length} photos</p>
+            </div>
+
+            {/* Image Grid/Collage */}
+            <div className="grid grid-cols-2 gap-4">
+              {lightbox.images.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="group relative overflow-hidden rounded-2xl cursor-pointer"
+                  style={{
+                    gridColumn: idx === 0 ? 'span 2' : 'span 1',
+                  }}
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={`${img}?auto=format&fit=crop&w=1200&q=90`}
+                      alt={`Photo ${idx + 1}`}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      style={{
+                        height: idx === 0 ? '500px' : '350px',
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                  
+                  {/* Photo number badge */}
+                  <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-full text-xs text-white/90 font-semibold">
+                    {idx + 1}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
+
     </div>
   );
 }
