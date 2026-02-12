@@ -1,41 +1,21 @@
 import { useState, useEffect } from "react";
-
-/**
- * HeroImageMosaic — full-width floating mosaic matching the screenshot layout.
- *
- * Layout (5 panels):
- *   [TALL RECT] [CIRCLE / RECT] [LARGE RECT] [CIRCLE / RECT]
- *
- * Two image sets crossfade every 4.5 s (colourful → B&W → repeat).
- * Each panel floats independently on a staggered CSS keyframe loop.
- *
- * USAGE (in your hero section right-hand column):
- *   <div style={{ height: 540, position: "relative" }}>
- *     <HeroImageMosaic />
- *   </div>
- *
- * Or as a standalone full-width section under the hero text.
- */
-
-// ── Image sets ────────────────────────────────────────────────────────────────
-// Replace these URLs with your own assets (e.g. ./images/1.jpeg)
 const SETS = [
   {
-    tallLeft:     "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=600&q=80",
+    tallLeft:     "/images/a66.jpeg",
     circleTop:    "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=600&q=80",
-    rectBot:      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80",
-    largeMid:     "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80",
-    circleRight:  "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
-    rectRight:    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80",
+    rectBot:      "/images/ab.png",
+    largeMid:     "/images/a88.jpeg",
+    circleRight:  "/images/a77.jpeg",
+    rectRight:    "/images/4.jpg",
     mono: false,
   },
   {
-    tallLeft:     "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
-    circleTop:    "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=600&q=80",
-    rectBot:      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80",
-    largeMid:     "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80",
-    circleRight:  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    rectRight:    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80",
+    tallLeft:     "/images/a44.jpeg",
+    circleTop:    "/images/1.jpeg",
+    rectBot:      "/images/1770919038691 (1).png",
+    largeMid:     "/images/a22.jpeg",
+    circleRight:  "/images/a55.jpeg",
+    rectRight:    "/images/a33.jpeg",
     mono: true,
   },
 ];
@@ -189,7 +169,7 @@ function Panel({ p }) {
         src={p.img}
         alt=""
         style={{
-          filter: p.mono ? "grayscale(100%) contrast(1.05)" : "none",
+          filter:"none",
           transition: "filter 1.1s ease",
         }}
       />
