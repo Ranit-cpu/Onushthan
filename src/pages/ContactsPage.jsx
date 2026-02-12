@@ -65,13 +65,13 @@ export default function ContactPage() {
                 {
                   icon: Mail,
                   title: "Email Us",
-                  value: "contact@onushthan.com",
+                  value: "onushthanevents@gmail.com",
                   gradient: "from-cyan-500 to-blue-600",
                 },
                 {
                   icon: Phone,
                   title: "Call Us",
-                  value: "+91 98368 11178",
+                  value: "+91 85840 98704 - +91 98368 11178",
                   gradient: "from-purple-500 to-pink-600",
                 },
                 {
